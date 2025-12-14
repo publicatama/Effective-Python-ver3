@@ -1,4 +1,25 @@
-from urllib.parse import parse_qs
+#-----------------------------------------------
+if True
+print('hello')
+#-----------------------------------------------
+1.3j5
+#-----------------------------------------------
+def bad_reference():
+    print(my_var)
+    my_var = 123
 
-my_values = parse_qs("red=5&blue=0&green=", keep_blank_values=True)
-print(repr(my_values))
+bad_reference9()
+#-----------------------------------------------
+def sometimes_ok(x):
+    if x:
+        my_var = 123
+        print(my_var)
+
+sometimes_ok(True) #123
+sometimes_ok(False) #エラーとなる
+#-----------------------------------------------
+def bad_math():
+    return 1/0
+
+bad_math()
+#-----------------------------------------------
